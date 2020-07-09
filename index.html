@@ -30,24 +30,29 @@
 			-moz-transform: translate(-50%, -50%);
 			-ms-transform: translate(-50%, -50%);			
 		}
-		/*
 		i {
 			font-size: 4vw!important;
-			color: grey!important;
+			color: DimGrey!important;
+			animation: blinker 3s linear infinite;
+			/*
 			-moz-transform: scaleX(-1);
 			-o-transform: scaleX(-1);
 			-webkit-transform: scaleX(-1);
 			transform: scaleX(-1);
 			filter: FlipH;
 			-ms-filter: "FlipH";
+			*/
 		}
-		*/
 		a:link, a:active, a:hover, a:visited {
 			color: black;
 			padding: 1vw;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
+		}
+		@keyframes blinker {
+		50% {
+			opacity: 0.35;
 		}
 	</style>
 </head>
